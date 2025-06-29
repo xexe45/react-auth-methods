@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import styles from "../styles/styles.module.css";
 import { useAuthenticationMethods } from '../hooks/useAuthenticationMethos';
 
-const PingQr = () => {
+export const PingQr = () => {
     const { discardSelectedMethod } = useAuthenticationMethods({});
     useEffect(() => {
       const timer = setTimeout(() => {
@@ -23,4 +23,3 @@ const PingQr = () => {
   )
 }
 
-export default PingQr

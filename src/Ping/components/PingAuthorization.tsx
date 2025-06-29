@@ -3,7 +3,7 @@ import styles from "../styles/styles.module.css";
 import { useAuthenticationMethods } from "../hooks/useAuthenticationMethos";
 import { onChangeArgs } from "../interfaces/AuthMethod.interface";
 import { PingAuthMethod } from "./PingAuthMethod";
-import PingQr from "./PingQr";
+import { PingQr, PingFacial, PingForm } from "./";
 interface Props {
   className?: string;
   style?: React.CSSProperties;
@@ -44,6 +44,16 @@ export const PingAuthorization = ({ className, style, onChange }: Props) => {
       {
         selected && (selected.id === '1') && (
             <PingQr />
+        )
+      }
+      {
+        selected && (selected.id === '2') && (
+            <PingFacial />
+        )
+      }
+      {
+        selected && (selected.id !== '1') && (selected.id !== '2') && (
+            <PingForm id={selected.id} />
         )
       }
     </div>

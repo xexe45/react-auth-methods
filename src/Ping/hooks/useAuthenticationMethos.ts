@@ -24,7 +24,7 @@ export const useAuthenticationMethods = ({onChange}: useAuthenticationMethodsArg
         dispatch(startSelectedMethod(method))
     }   
 
-    const discardSelectedMethod = (code: string) => {
+    const discardSelectedMethod = (code: string | null) => {
         dispatch(finishSelectedMethod());
         dispatch(startCode(code));
     }
