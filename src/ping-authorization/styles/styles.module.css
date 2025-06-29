@@ -1,0 +1,29 @@
+.card {
+    background-color: white;
+    padding: 16px 12px;
+    border-radius: 8px;
+}
+
+.textDark {
+    color: #3b3b3b;
+    font-size: 1.1rem;
+}
+
+.subTitle {
+    color: #3b3b3b;
+    font-size: 1rem;
+}
+
+.list {
+    padding: 0 !important;
+    list-style-type: none;
+    text-align: center;
+}
+
+.listItem {
+    color: #3b3b3b;
+    font-size: 12px;
+    padding: 12px;
+    border-bottom: 1px solid #CCC;
+    cursor: pointer;
+}
